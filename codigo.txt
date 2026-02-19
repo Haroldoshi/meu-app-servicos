@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil do Profissional - ServiceHub</title>
+    <style>
+        :root { --primary: #1a73e8; --whatsapp: #25d366; --premium: #f39c12; }
+        body { font-family: 'Segoe UI', sans-serif; margin: 0; background: #fff; color: #333; }
+        
+        /* Cabeçalho do Perfil */
+        .perfil-header { text-align: center; padding: 40px 20px; background: #f8f9fa; border-bottom: 1px solid #eee; }
+        .foto-perfil { width: 100px; height: 100px; border-radius: 50%; background: #ddd; margin: 0 auto 15px; border: 3px solid var(--primary); object-fit: cover; }
+        .selo-premium { color: var(--premium); font-weight: bold; font-size: 0.9rem; text-transform: uppercase; }
+
+        .container { padding: 20px; max-width: 600px; margin: auto; }
+        
+        /* Galeria de Fotos */
+        .galeria { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin: 20px 0; }
+        .foto-trabalho { width: 100%; aspect-ratio: 1; background: #eee; border-radius: 8px; object-fit: cover; }
+
+        /* Descrição */
+        .bio { line-height: 1.6; color: #555; }
+
+        /* Botão WhatsApp Fixo */
+        .btn-whatsapp {
+            position: fixed; bottom: 20px; left: 20px; right: 20px;
+            background: var(--whatsapp); color: white; text-align: center;
+            padding: 15px; border-radius: 30px; text-decoration: none;
+            font-weight: bold; box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            display: flex; align-items: center; justify-content: center; gap: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="perfil-header">
+    <div class="foto-perfil">
+        <img src="https://via.placeholder.com/100" alt="Foto" style="border-radius: 50%;">
+    </div>
+    <span class="selo-premium">★ Profissional Premium</span>
+    <h2>João Silva - Eletricista</h2>
+    <p>Atendimento em Lisboa e arredores</p>
+</div>
+
+<div class="container">
+    <h3>Sobre o Serviço</h3>
+    <p class="bio">
+        Especialista em instalações residenciais e comerciais com mais de 10 anos de experiência. 
+        Realizo manutenção de quadros elétricos, instalação de luminárias e reparação de curtos-circuitos.
+    </p>
+
+    <h3>Portfólio (Fotos do Trabalho)</h3>
+    <div class="galeria">
+        <div class="foto-trabalho"></div>
+        <div class="foto-trabalho"></div>
+        <div class="foto-trabalho"></div>
+    </div>
+
+    <div style="margin-bottom: 100px;"> <h3>Contactos</h3>
+        <p>📍 Localização: Benfica, Lisboa</p>
+        <p>🕒 Horário: Seg a Sex, 08h às 19h</p>
+    </div>
+</div>
+
+<a href="https://wa.me/351900000000?text=Olá,%20vi%20o%20seu%20perfil%20no%20ServiceHub%20e%20gostaria%20de%20um%20orçamento." 
+   class="btn-whatsapp" target="_blank">
+    <span>Enviar Mensagem via WhatsApp</span>
+</a>
+
+</body>
+</html>
